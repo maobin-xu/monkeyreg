@@ -331,12 +331,13 @@ gen s2 = mod(_n-1, 3)==1
 gen f1 = mod(_n, 2) == 1
 gen f2 = mod(_n-1, 3) + 1
 
-monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab")
+monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab1")
 
-monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500))
+monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve1.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500))
 
-monkeyreg , dep(y1, y2) indep(x1, x2) control( , c1, c1 c2) fe( , f1, f2) sample( , s1) se( , robust, f2) save("regtab") plot("curve.png") depl("Y1" "Y2") indepl("X1" "X2") controll("No" "Control set 1" "Control set 2") fel("No" "Fixed effects 1" "Fixed effects 2") samplel("Full sample" "Sample 1") sel("No" "Robust" "F2") level(90) ratio(1) fontsize(small) twoway_opt(graphregion(margin(l=22 r=5 t=0 b=0)) scale(0.6)) rarea_opt(color(gray%40)) scatter_opt(color(gray)) graph_opt(width(3000) height(2000))
+monkeyreg , dep(y1, y2) indep(x1, x2) control( , c1, c1 c2) fe( , f1, f2) sample( , s1) se( , robust, f2) save("regtab2") plot("curve2.png") depl("Y1" "Y2") indepl("X1" "X2") controll("No" "Control set 1" "Control set 2") fel("No" "Fixed effects 1" "Fixed effects 2") samplel("Full sample" "Sample 1") sel("No" "Robust" "F2") level(90) ratio(1) fontsize(small) twoway_opt(graphregion(margin(l=22 r=5 t=0 b=0)) scale(0.6)) rarea_opt(color(gray%40)) scatter_opt(color(gray)) graph_opt(width(3000) height(2000))
 
 */
+
 
 
