@@ -1,4 +1,5 @@
 *! version 1.0 2025-08-24
+* by Maobin Xu, The Chinese University of Hong Kong, Shenzhen
 
 program define monkeyreg
 version 16.1
@@ -337,4 +338,5 @@ monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s
 monkeyreg , dep(y1, y2) indep(x1, x2) control( , c1, c1 c2) fe( , f1, f2) sample( , s1) se( , robust, f2) save("regtab") plot("curve.png") depl("Y1" "Y2") indepl("X1" "X2") controll("No" "Control set 1" "Control set 2") fel("No" "Fixed effects 1" "Fixed effects 2") samplel("Full sample" "Sample 1") sel("No" "Robust" "F2") level(90) ratio(1) fontsize(small) twoway_opt(graphregion(margin(l=22 r=5 t=0 b=0)) scale(0.6)) rarea_opt(color(gray%40)) scatter_opt(color(gray)) graph_opt(width(3000) height(2000))
 
 */
+
 
