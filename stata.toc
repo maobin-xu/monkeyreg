@@ -1,0 +1,3 @@
+v 1.0
+d Maobin Xu, The Chinese University of Hong Kong, Shenzhen
+p A Stata command to plot and save regression results from specification combinations. Specification curve analysis, meta analysis, and robustness.
