@@ -1,9 +1,10 @@
 # monkeyreg
 
-by Maobin Xu
+by **Maobin Xu**
+
 Email: xumaobinbin@gmail.com
 
-A Stata command to plot and save regression results from specification combinations. It is useful for specification curve analysis, meta analysis, and robustness.
+`monkeyreg` is a Stata command to plot and save regression results from specification combinations. It is useful for specification curve analysis, meta analysis, and robustness.
 It systematically runs a series of regressions based on user-defined specification combinations, plots the results, and saves the output to a dataset. 
 
 -----
