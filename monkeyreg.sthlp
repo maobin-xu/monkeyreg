@@ -133,7 +133,8 @@ Simonsohn, U., Simmons, J.P. & Nelson, L.D. 2020. "Specification Curve Analysis"
 
 {pstd}Maobin Xu{p_end}
 {pstd}The Chinese University of Hong Kong, Shenzhen {p_end}
-{pstd}Email: {browse "mailto:xumaobinbin@gmail.com":xumaobinbin@gmail.com}{p_end}
+{pstd}Email: {browse "mailto:maobinxu@foxmail.com":maobinxu@foxmail.com}{p_end}
+
 
 
 
