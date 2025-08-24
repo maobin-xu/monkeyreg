@@ -100,7 +100,7 @@ gen f2 = mod(_n-1, 3) + 1
 
 #### Example 1: Save Regression Results Only
 
-This command runs all possible regressions and saves the results to `regtab.dta`, without generating a plot.
+This command runs all possible regressions and saves the results to `regtab1.dta`, without generating a plot.
 
 ```stata
 monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab1")
@@ -108,7 +108,7 @@ monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s
 
 #### Example 2: Generate and Save a Plot
 
-This command generates a specification curve and saves it as `curve.png`.
+This command generates a specification curve and saves it as `curve1.png`.
 
 ```stata
 monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve1.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500))
