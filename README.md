@@ -114,6 +114,8 @@ This command generates a specification curve and saves it as `curve.png`.
 monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500))
 ```
 
+![Figure 1](fig/curve1.png)
+
 #### Example 3: Full Customization
 
 This example shows the command with a full set of customized options, including specific labels for each option set.
@@ -132,4 +134,4 @@ monkeyreg, ///
     graph_opt(width(3000) height(2000))
 ```
 
-
+![Figure 2](fig/curve2.png)
