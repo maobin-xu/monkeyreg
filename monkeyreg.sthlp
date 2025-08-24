@@ -95,13 +95,13 @@ Fixed effect variables:{p_end}
 {pstd}
 Save only regression data:{p_end}
 
-{phang2}{stata `"monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab") "'}{p_end}
+{phang2}{stata `"monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab1") "'}{p_end}
     
 {pstd}
 Save a curve graph with simple settings:{p_end}
 
 {phang2}
-{stata `"monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500)) "'}{p_end}
+{stata `"monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve1.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500)) "'}{p_end}
 
 {pstd}
 Save a curve graph and regression results with full settings:{p_end}
@@ -114,8 +114,8 @@ control( , c1, c1 c2) controll("No" "Control set 1" "Control set 2")
 fe( , f1, f2) fel("No" "Fixed effects 1" "Fixed effects 2") 
 sample( , s1) samplel("Full sample" "Sample 1") 
 se( , robust, f2) sel("No" "Robust" "F2") 
-save("regtab")
-plot("curve.png") level(90) ratio(1) fontsize(small)
+save("regtab2")
+plot("curve2.png") level(90) ratio(1) fontsize(small)
 twoway_opt(graphregion(margin(l=22 r=5 t=0 b=0)) scale(0.6))
 rarea_opt(color(gray%40)) scatter_opt(color(gray))
 graph_opt(width(3000) height(2000))
@@ -134,6 +134,7 @@ Simonsohn, U., Simmons, J.P. & Nelson, L.D. 2020. "Specification Curve Analysis"
 {pstd}Maobin Xu{p_end}
 {pstd}The Chinese University of Hong Kong, Shenzhen {p_end}
 {pstd}Email: {browse "mailto:xumaobinbin@gmail.com":xumaobinbin@gmail.com}{p_end}
+
 
 
 
