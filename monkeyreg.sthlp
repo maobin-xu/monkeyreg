@@ -47,7 +47,7 @@
 {title:Description}
 
 {pstd}
-{cmd:monkeyreg} is a all-Stata command to plot regression specification curve and save regression results from specification combinations, such as samples, dependent variables, and fixed effects. It is useful for specification curve analysis, meta analysis, and robustness. This command requires {cmd:reghdfe}.{p_end}
+{cmd:monkeyreg} is an all-Stata command to plot regression specification curve and save regression results from specification combinations, such as samples, dependent variables, and fixed effects. It is useful for specification curve analysis, meta analysis, and robustness. This command requires {cmd:reghdfe}.{p_end}
 
 {pstd}
 By the way, I first wanted to call this command {cmd:metareg}, as it's useful for conducting empirical meta-analysis and showing robustness in a unified framework. Unfortunately, {cmd:metareg} already exists. (╥﹏╥) Soon after, something funny popped into my head when I thought of the other side of meta analysis. Finally, I decided to name it {cmd:monkeyreg}. _(:з」∠ )_ Wish you a happy life!{p_end}
@@ -98,13 +98,13 @@ Save only regression data:{p_end}
 {phang2}{stata `"monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab") "'}{p_end}
     
 {pstd}
-Save a curve graph with simple setting:{p_end}
+Save a curve graph with simple settings:{p_end}
 
 {phang2}
 {stata `"monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500)) "'}{p_end}
 
 {pstd}
-Save a curve graph and regression results with full setting:{p_end}
+Save a curve graph and regression results with full settings:{p_end}
 
 {phang2}{cmd}
 monkeyreg , 
@@ -134,5 +134,6 @@ Simonsohn, U., Simmons, J.P. & Nelson, L.D. 2020. "Specification Curve Analysis"
 {pstd}Maobin Xu{p_end}
 {pstd}The Chinese University of Hong Kong, Shenzhen {p_end}
 {pstd}Email: {browse "mailto:xumaobinbin@gmail.com":xumaobinbin@gmail.com}{p_end}
+
 
 
