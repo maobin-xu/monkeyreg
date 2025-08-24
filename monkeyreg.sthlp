@@ -50,7 +50,7 @@
 {cmd:monkeyreg} is a all-Stata command to plot regression specification curve and save regression results from specification combinations, such as samples, dependent variables, and fixed effects. It is useful for specification curve analysis, meta analysis, and robustness. This command requires {cmd:reghdfe}.{p_end}
 
 {pstd}
-By the way, I first wanted to call this command {cmd:metareg}, as it's useful for conducting empirical meta-analysis and showing robustness in a unified framework. Unfortunately, {cmd:metareg} already exists. (╥﹏╥) Soon after, something funny popped into my head when I think of the other side of meta analysis. Finally, I decided to name it {cmd:monkeyreg}. _(:з」∠ )_ Wish you a happy life!{p_end}
+By the way, I first wanted to call this command {cmd:metareg}, as it's useful for conducting empirical meta-analysis and showing robustness in a unified framework. Unfortunately, {cmd:metareg} already exists. (╥﹏╥) Soon after, something funny popped into my head when I thought of the other side of meta analysis. Finally, I decided to name it {cmd:monkeyreg}. _(:з」∠ )_ Wish you a happy life!{p_end}
 
 {pstd}
 An alternative command is {cmd:specurve} developed by Mingze Gao, which requires users to manually create a YAML configuration file.{p_end}
@@ -134,4 +134,5 @@ Simonsohn, U., Simmons, J.P. & Nelson, L.D. 2020. "Specification Curve Analysis"
 {pstd}Maobin Xu{p_end}
 {pstd}The Chinese University of Hong Kong, Shenzhen {p_end}
 {pstd}Email: {browse "mailto:xumaobinbin@gmail.com":xumaobinbin@gmail.com}{p_end}
+
 
