@@ -103,7 +103,7 @@ gen f2 = mod(_n-1, 3) + 1
 This command runs all possible regressions and saves the results to `regtab.dta`, without generating a plot.
 
 ```stata
-monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab")
+monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1) se(robust, , f2) save("regtab1")
 ```
 
 #### Example 2: Generate and Save a Plot
@@ -111,7 +111,7 @@ monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s
 This command generates a specification curve and saves it as `curve.png`.
 
 ```stata
-monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500))
+monkeyreg , dep(y1, y2) indep(x1) control(c1, , c1 c2) fe( , f1, f2) sample( , s1)  plot("curve1.png") twoway_opt(graphregion(margin(l=42 r=5 t=0 b=0))) graph_opt(width(1500) height(1500))
 ```
 
 ![Figure 1](fig/curve1.png)
@@ -128,7 +128,7 @@ monkeyreg, ///
     fe( , f1, f2) fel("No" "Fixed effects 1" "Fixed effects 2") ///
     sample( , s1) samplel("Full sample" "Sample 1") ///
     se( , robust, f2) sel("No" "Robust" "F2") ///
-    save("regtab.dta") plot("curve.png") level(90) ratio(1) fontsize(small) ///
+    save("regtab2.dta") plot("curve2.png") level(90) ratio(1) fontsize(small) ///
     twoway_opt(graphregion(margin(l=22 r=5 t=0 b=0)) scale(0.6)) ///
     rarea_opt(color(gray%40)) scatter_opt(color(gray)) ///
     graph_opt(width(3000) height(2000))
