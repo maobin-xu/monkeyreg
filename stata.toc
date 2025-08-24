@@ -1,3 +1,7 @@
 v 1.0
+n monkeyreg
+d A Stata command to plot and save regression results from specification combinations. Specification curve analysis, meta analysis, and robustness.
 d by Maobin Xu, The Chinese University of Hong Kong, Shenzhen
-p A Stata command to plot and save regression results from specification combinations. Specification curve analysis, meta analysis, and robustness.
+f monkeyreg.ado
+f monkeyreg.sthlp
+f monkeyreg.pkg
