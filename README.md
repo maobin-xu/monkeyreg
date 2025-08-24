@@ -7,7 +7,7 @@ Email: xumaobinbin@gmail.com
 `monkeyreg` is a Stata command to plot and save regression results from specification combinations. It is useful for specification curve analysis, meta analysis, and robustness.
 It systematically runs a series of regressions based on user-defined specification combinations, plots the results, and saves the output to a dataset. 
 
-By the way, I first wanted to call this command {cmd:metareg}, as it's useful for conducting empirical meta-analysis and showing robustness in a unified framework. Unfortunately, {cmd:metareg} already exists. (╥﹏╥) Soon after, something funny popped into my head when I thought of the other side of meta analysis. Finally, I decided to name it {cmd:monkeyreg}. _(:з」∠ )_ Wish you a happy life!
+By the way, I first wanted to call this command `metareg`, as it's useful for conducting empirical meta-analysis and showing robustness in a unified framework. Unfortunately, `metareg` already exists. (╥﹏╥) Soon after, something funny popped into my head when I thought of the other side of meta analysis. Finally, I decided to name it `monkeyreg`. _(:з」∠ )_ Wish you a happy life!
 
 -----
 
