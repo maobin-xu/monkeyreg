@@ -24,37 +24,44 @@ net install monkeyreg, from("https://raw.githubusercontent.com/maobin-xu/monkeyr
 The basic syntax for `monkeyreg` is:
 
 ```stata
-monkeyreg, dep(varlist) indep(varlist) [options]
+monkeyreg, dep(str) indep(str) [options]
 ```
 
 -----
 
 ### Options
 
-`monkeyreg` includes a variety of options to customize your analysis and plots.
-
 #### Regression Options (using `reghdfe`)
 
-  * `dep(string)`: A list of dependent variables.
-  * `indep(string)`: A list of key independent variables.
-  * `sample(string)`: A list of sample variables (that equal 1) to define the samples used in regressions.
-  * `control(string)`: A list of control variable sets.
-  * `fe(string)`: A list of fixed effects.
-  * `se(string)`: A list of standard error clustering methods.
-  * `reghdfe_opt(string)`: Any other valid options for the `reghdfe` command.
+  * `dep(str)`: A list of dependent variables.
+  * `indep(str)`: A list of key independent variables.
+  * `sample(str)`: A list of sample variables (that equal 1) to define the samples used in regressions.
+  * `control(str)`: A list of control variable sets.
+  * `fe(str)`: A list of fixed effects.
+  * `se(str)`: A list of standard error clustering methods.
+  * `reghdfe_opt(str)`: Any other valid options for the `reghdfe` command.
 
 #### Plot Options (using `twoway` and `graph export`)
 
-  * `plot(string)`: Path to save the regression specification curve graph. This option is required to generate the plot.
-  * `order(string)`: The order of specifications for the plot's X-axis. The default is `dep, indep, control, fe, se, sample`.
+  * `plot(str)`: Path to save the regression specification curve graph. This option is required to generate the plot.
+  * `order(str)`: The order of specifications for the curve. The default is `order(dep, indep, control, fe, se, sample)`.
+  * `orderl(string)`: A list of labels for the order of specifications.
+  * `depl(str)`: A list of labels for the dependent variables.
+  * `indepl(str)`: A list of labels for the key independent variables.
+  * `samplel(str)`: A list of labels for the sample options.
+  * `controll(str)`: A list of labels for the control variable sets.
+  * `fel(string)`: A list of labels for the fixed effects.
+  * `sel(string)`: A list of labels for the standard error clustering methods.
   * `level(#)`: The confidence level for the confidence intervals. Default is `95`.
-  * `twoway_opt(string)`: Other options for the `twoway` command.
-  * `graph_opt(string)`: Other options for the `graph export` command.
+  * `twoway_opt(str)`: Other options for the `twoway` command.
+  * `scatter_opt(str)`: Other options for the `twoway scatter` command, used to plot the β coefficients.
+  * `rarea_opt(str)`: Other options for the `twoway rarea` command, used to plot the confidence intervals.
+  * `graph_opt(str)`: Other options for the `graph export` command.
 
 #### Save Options
 
-  * `save(string)`: Path to save the regression results as a Stata dataset (.dta).
-  * `stats(string)`: A list of additional `e()` statistics from `reghdfe` to save.
+  * `save(str)`: Path to save the regression results as a Stata dataset (.dta).
+  * `stats(str)`: A list of additional `e()` statistics from `reghdfe` to save.
 
 -----
 
